@@ -1,0 +1,231 @@
+/* Hello and welcome to my CSS file! I'm a beginner, so I have tried to comment as best I can for future reference, so sorry if everything isn't crystal clear! Also I'm now aware that using one CSS file for all pages has made things a bit troublesome, but also helped a lot in the long term. 
+
+DISCLAIMER:
+This was developed with high resolution monitors so it may not look as great on lower resolution screens! You have been warned! */
+
+/* Changes body background to a darker white, making it easier on the eyes */
+body {
+    background-color: #f2f2f2;
+}
+
+.container-fluid {
+    width: 65%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    padding-left: 7em;
+    padding-right: 7em;
+}
+
+p {
+    font-size: 14pt;
+    line-height: 1.6;
+}
+
+/* ALL CSS BELOW MODIFIES THE NAVBAR 
+--------------------------------------------- */
+/* For some reason the corners of the navbar were rounded, so this fixes it */
+.navbar {
+    border-radius: 0px;
+}
+
+/* Changes elements of the navbar */
+.navbar-inverse .navbar-brand {
+    font-size: 14pt;
+    color: #27db66;
+}
+
+/* When hovering over a link it will highlight white */
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #f2f2f2;
+}
+
+/* Modifies the "active" class giving it a lighter, more noticeable highlight */
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #f2f2f2;
+    background-color: #3a3a3a;
+}
+
+/* These next two are for my shameless self-promotion links */
+#twitter:hover {
+    color: #4286f4;
+}
+
+#youtube:hover {
+    color: #d32828;
+}
+
+/* ALL CSS BELOW MODIFIES ELEMENTS ON THE HOME PAGE 
+--------------------------------------------- */
+
+/* Changes elements of the jumbotron */
+.jumbotron {
+    background-image: url(img/background-2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Content inside of the jumbotron */
+#content {
+    text-align: center;
+    color: #f2f2f2;
+}
+
+#home-div {
+    width: 65%;
+}
+
+/* Centers the elements in the four sections below jumbotron */
+.sections .col-lg-3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sections .col-lg-3 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Makes the images used the same size to prevent issues */
+.img-circle {
+    width: 140px;
+    height: 140px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* ALL CSS BELOW MODIFIES ELEMENTS ON THE JOBS PAGE 
+--------------------------------------------- */
+
+/* This gets used a lot and just makes the text bold with some padding around it */
+.title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Components for each occupation */
+.components {
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14pt;
+}
+
+/* Stands for job divider and is just an invisible divider. Ended up using this everywhere and didn't bother to rename it */
+.jDivider {
+    border-color: rgba(0,0,0,0);
+    margin: 50px 0; /* This spaces out the hr tags a little more */
+}
+
+/* Makes the images align to the right */
+.pull-right {
+    margin: auto 70px;
+    height: auto;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Just so I could indent the paragraph at the end of the page */
+.tab {
+    text-indent: 30pt;
+}
+
+/* This is just for fixing the images in college.html to the same height so that they line up */
+.img-fix {
+    height: 170px;
+}
+
+/* ALL CSS BELOW MODIFIES ELEMENTS ON THE BUDGET PAGE 
+--------------------------------------------- */
+
+.img-thumbnail {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Gives the table row properties of table-danger since the class doesn't work by itself */
+.table-danger {
+    background-color: #f2dede !important;
+}
+
+/* Shades the table head */
+thead {
+    background-color: #dddddd;
+}
+
+/* Gives some padding to the "What I chose" sections */
+.chs-choice {
+    padding: 7em;
+}
+
+/* These are for the next/previous page buttons */
+.icons {
+    text-align: center;
+    color: deepskyblue;
+    padding: 0.2em;
+}
+
+/* For the paragraph below the title on page 1 of the budget */
+#budget {
+    text-align: center;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Resizes the vs images. */
+.vs {
+    height: 400px;
+    width: auto;
+}
+
+#disclaimer {
+    text-align: right;
+}
+
+
+
+/* ALL CSS BELOW MODIFIES ELEMENTS ON THE STOCKS PAGE 
+--------------------------------------------- */
+
+.sImg {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+/* This bit was annoying since I had to work with different sizes. Resizes individual images */
+#amd {
+    height: 100px;
+}
+
+#netflix {
+    height: 100px;
+}
+
+#tesla {
+    height: 250px;
+}
+
+/* ALL CSS BELOW MODIFIES ELEMENTS ON THE CREDIT PAGE 
+--------------------------------------------- */
+
+.img-top {
+    height: 300px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Changes the about.html background */
+#about {
+    background-image: url(img/background-1.png);
+    background-position: center;
+}
+
+
+
+
+/* TIME FOR BED BECAUSE I AM SO FREAKIN' TIRED BUB */
+
